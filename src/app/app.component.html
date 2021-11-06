@@ -1,0 +1,18 @@
+  <hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>   
+<h1>Dashboard Example</h1>
+
+<app-widget [title]="titleA">
+    <app-widget-a (titleEventA)="setATitle($event)"></app-widget-a>
+</app-widget>
+
+<app-widget [title]="titleB">
+    <app-widget-b (titleEventB)="setBTitle($event)"></app-widget-b>
+</app-widget> 
+
+<app-widget [title]="titleC">
+    <app-widget-c (titleEventC)="setCTitle($event)"></app-widget-c>
+</app-widget>
+End of widgets example

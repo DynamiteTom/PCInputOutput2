@@ -1,0 +1,15 @@
+<header>
+      <div>title is {{ title }}</div>
+</header>
+
+<form #it="ngForm" (ngSubmit)="onSubmit(it)" novalidate>
+    <br/><input name="newT" #it="ngModel" [(ngModel)]="newTitle">
+    <button type="submit">Submit</button>   
+</form>
+<button (click)="updateWidget()">Update</button>
+
+<section>
+  <ng-content [select]="WA"></ng-content> 
+  <ng-content [select]="WB"></ng-content> 
+  <ng-content [select]="WC"></ng-content> 
+</section>

@@ -1,0 +1,19 @@
+:host {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: column;
+  outline: 1px solid #ccc;
+}
+
+header {
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+section {
+  padding: 10;
+}
